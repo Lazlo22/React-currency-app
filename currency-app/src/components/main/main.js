@@ -1,7 +1,7 @@
 import React from 'react';
-import Home from './main/home';
-import Currency from './main/currencies';
-import Convert from './main/convert';
+import Home from './home';
+import Currency from './currencies';
+import Convert from './convert';
 import {Route , Switch} from 'react-router-dom';
 
 export default class Main extends React.Component {
