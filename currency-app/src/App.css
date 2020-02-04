@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Martel+Sans&display=swap');
+
+.header-wrapper {
+    width: 100vw;
+    height: 22vh;
+    background: rgb(6, 150, 2);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.greetings {
+    margin: 7vh 0;
+}
+
+.menu {
+    width: 100vw;
+    background: #fefefe;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.menu ul {
+    margin: 10px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menu ul li a:visited {
+    color: black;
+}
+
+.header-menu {
+    font-family: 'Martel Sans', sans-serif;
+}
+
+@media(min-width: 900px) {
+    .menu ul li a {
+        font-size: 1.9rem;
+        padding: 0 10px;
+    }
+
+    .greetings {
+        font-size: 3rem;
+    }
+
+    .home-text {
+        font-size: 3rem !important;
+        margin: 0;
+    }
+
+    .home-p {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media(max-height: 650px) {
+    .menu ul li a {
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+
+    .menu ul {
+        margin: 7px;
+    }
+
+    .header-wrapper {
+        height: 30vh;
+    }
+}
+
+@media(max-height: 830px) {
+    .header-wrapper {
+        height: 30vh;
+    }
+}
+
+.container-main {
+    width: 100vw;
+    height: 80vh;
+    margin-top: 20vh;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    height: 40vh;
+    width: 70vw;
+    padding: 8vw;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.home-content {
+    text-align: center;
+    padding: 10vh 0;
+}
+
+.home-text {
+    font-size: 2rem;
+}
+
+.home-p {
+    font-size: 1.5rem;
+}
+
+@media(max-height: 830px) {
+    .container-main {
+        margin-top: 25vh;
+    }
+
+    /* .main-content {
+        height: 40vh;
+        padding: 8vw;
+    } */
+
+    .home-content {
+        text-align: center;
+        padding: 1vh 0;
+    }
+
+    .home-text {
+        font-size: 2rem;
+    }
+
+    .home-p {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-height: 670px) {
+    .container-main {
+        margin-top: 33vh;
+    }
+
+    .home-content {
+        padding: 0;
+    }
+
+    .home-text {
+        font-size: 1.6rem;
+    }
+
+    .home-p {
+        font-size: 1.2rem;
+    }
+}
+
+.currency-content {
+    text-align: center;
+}
+
+.currency-text {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.currency-main-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.rates {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.big-phones {
+    display: none;
+}
+
+@media(min-height: 370px) {
+    @media(min-width: 370px) {
+        .big-phones {
+            display: inline;
+        }
+    }
+}
+
+@media(min-width: 700px) {
+    .currency-text {
+        font-size: 2.3rem;
+    }
+
+    .rates {
+        padding: 10px 20px;
+        font-size: 2rem;
+    }
+}
+
+@media(min-width: 1000px) {
+    .currency-text {
+        font-size: 3rem;
+    }
+
+    .rates {
+        padding: 10px 30px;
+        font-size: 2.5rem;
+    }
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.sum {
+    padding: 13px;
+    margin: 0 0 15px 0;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+.cur-btn {
+    padding: 13px;
+    margin: 0 0 30px 0;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.cur-conv {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Martel Sans', sans-serif;
+    text-align: center;
+}
+
+@media(min-width: 700px) {
+    .sum {
+        padding: 15px;
+        margin: 0 0 40px 0;
+        font-size: 2rem;
+    }
+
+    .cur-btn {
+        font-size: 1.8rem;
+    }
+
+    .cur-conv {
+        font-size: 3rem;
+    }
+}
+
+@media(min-width: 1000px) {
+    .sum {
+        padding: 30px;
+        margin: 0 0 60px 0;
+        font-size: 3rem;
+    }
+
+    .cur-btn {
+        font-size: 2.8rem;
+    }
+
+    .cur-conv {
+        font-size: 4rem;
+    }
+}
